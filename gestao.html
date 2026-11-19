@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Gestão | Nossa Escola, Nossa Voz</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .painel {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .grade {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        .indicador {
+            background: white;
+            padding: 23px;
+            border-radius: 14px;
+            border-left: 5px solid #28649B;
+            box-shadow: 0 4px 15px rgba(16,46,80,.07);
+        }
+
+        .indicador h3 {
+            color: #52677D;
+            font-size: 15px;
+        }
+
+        .numero {
+            font-size: 32px;
+            font-weight: bold;
+            color: #102E50;
+        }
+
+        .secao-painel {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            margin: 22px 0;
+            box-shadow: 0 4px 15px rgba(16,46,80,.07);
+        }
+
+        .secao-painel h2 {
+            color: #102E50;
+            margin-top: 0;
+        }
+
+        .item {
+            background: #F4F7FB;
+            padding: 16px;
+            border-radius: 9px;
+            margin: 12px 0;
+        }
+
+        .item p {
+            margin-bottom: 0;
+            color: #52677D;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 20px;
+            background: #E4EDF7;
+            color: #102E50;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .botao {
+            background: #102E50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .botao:hover {
+            background: #28649B;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #28649B;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .observacao {
+            background: #FFF7E5;
+            border-left: 4px solid #D5A94E;
+            padding: 15px;
+            border-radius: 8px;
+            color: #604B20;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="marca">
+            <div class="marca-icone">NV</div>
+            <div>
+                <strong>Nossa Escola, Nossa Voz</strong>
+                <p>Área de gestão escolar</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="painel">
+
+        <a href="../index.html" class="voltar">← Voltar ao início</a>
+
+        <section class="boas-vindas">
+            <span class="etiqueta">ÁREA ADMINISTRATIVA</span>
+            <h1>Painel da Gestão Escolar</h1>
+            <p>
+                Espaço destinado à visualização e ao acompanhamento
+                das participações dos estudantes.
+            </p>
+        </section>
+
+        <div class="observacao">
+            <strong>Prévia do painel:</strong>
+            Os indicadores e registros serão preenchidos automaticamente
+            quando conectarmos o sistema ao banco de dados.
+        </div>
+
+        <section class="grade">
+
+            <div class="indicador">
+                <h3>Diagnósticos recebidos</h3>
+                <div class="numero">0</div>
+                <p>Participações dos alunos</p>
+            </div>
+
+            <div class="indicador">
+                <h3>Checklists preenchidos</h3>
+                <div class="numero">0</div>
+                <p>Avaliações dos espaços</p>
+            </div>
+
+            <div class="indicador">
+                <h3>Sugestões recebidas</h3>
+                <div class="numero">0</div>
+                <p>Ideias dos estudantes</p>
+            </div>
+
+            <div class="indicador">
+                <h3>Problemas comunicados</h3>
+                <div class="numero">0</div>
+                <p>Registros realizados</p>
+            </div>
+
+        </section>
+
+        <section class="secao-painel">
+            <h2>Diagnóstico escolar</h2>
+            <p>
+                Aqui serão apresentados os resultados gerais das
+                avaliações dos alunos sobre a infraestrutura escolar.
+            </p>
+            <div class="item">
+                <strong>Resultados e percepções dos estudantes</strong>
+                <p>Os gráficos e percentuais aparecerão nesta área.</p>
+            </div>
+        </section>
+
+        <section class="secao-painel">
+            <h2>Checklists dos espaços</h2>
+            <p>
+                Consulta das avaliações realizadas pelos estudantes
+                sobre os ambientes da escola.
+            </p>
+            <div class="item">
+                <strong>Avaliações dos ambientes</strong>
+                <p>Os registros dos checklists aparecerão aqui.</p>
+            </div>
+        </section>
+
+        <section class="secao-painel">
+            <h2>Sugestões dos estudantes</h2>
+            <div class="item">
+                <strong>Banco de sugestões</strong>
+                <p>As sugestões enviadas serão organizadas nesta área.</p>
+            </div>
+        </section>
+
+        <section class="secao-painel">
+            <h2>Problemas comunicados</h2>
+            <div class="item">
+                <strong>Acompanhamento das ocorrências</strong>
+                <p>Os problemas registrados aparecerão nesta área.</p>
+                <p>Status disponíveis: Pendente, Em análise e Resolvido.</p>
+            </div>
+        </section>
+
+        <section class="secao-painel">
+            <h2>Relatórios</h2>
+            <p>
+                Nesta área será possível gerar relatórios com os
+                resultados dos diagnósticos e registros realizados.
+            </p>
+            <button class="botao" type="button" disabled>
+                Exportar relatório em PDF
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>

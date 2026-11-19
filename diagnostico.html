@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico Escolar | Nossa Escola, Nossa Voz</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .diagnostico-card {
+            background: white;
+            border: 1px solid #E5EAF0;
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .diagnostico-card h3 {
+            color: #102E50;
+            margin-bottom: 10px;
+        }
+
+        .pergunta {
+            padding: 18px 0;
+            border-bottom: 1px solid #E5EAF0;
+        }
+
+        .pergunta:last-child {
+            border-bottom: none;
+        }
+
+        .pergunta p {
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .campo {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #D5DEE8;
+            border-radius: 8px;
+            background: white;
+            font-family: inherit;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        .botao {
+            background: #28649B;
+            color: white;
+            border: none;
+            border-radius: 9px;
+            padding: 15px 25px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .botao:hover {
+            background: #102E50;
+        }
+
+        .aviso {
+            background: #EAF1F8;
+            padding: 16px;
+            border-radius: 10px;
+            color: #28649B;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="topo">
+    <div class="marca">
+        <div class="marca-icone">NE</div>
+        <div>
+            <h1>Nossa Escola, Nossa Voz</h1>
+            <p>Diagnóstico da infraestrutura escolar</p>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="boas-vindas">
+        <span class="etiqueta">PARTICIPAÇÃO ESTUDANTIL</span>
+        <h2>Sua opinião ajuda a conhecer nossa escola.</h2>
+        <p>
+            Responda às perguntas e compartilhe sua percepção
+            sobre as condições da infraestrutura escolar.
+            Sua participação é muito importante!
+        </p>
+    </section>
+
+    <div class="aviso">
+        <strong>Como funciona?</strong><br>
+        Avalie cada aspecto de acordo com sua experiência.
+        Não existem respostas certas ou erradas.
+        Você pode participar sem informar seu nome.
+    </div>
+
+    <section class="secao">
+        <h2>Diagnóstico escolar</h2>
+        <p class="descricao">
+            Avaliação geral das condições dos espaços escolares.
+        </p>
+
+        <form id="formDiagnostico">
+
+            <div class="diagnostico-card">
+                <h3>1. Condições dos ambientes</h3>
+
+                <div class="pergunta">
+                    <p>Como você avalia a conservação dos espaços da escola?</p>
+                    <select class="campo" name="conservacao" required>
+                        <option value="">Selecione</option>
+                        <option>Muito boa</option>
+                        <option>Boa</option>
+                        <option>Regular</option>
+                        <option>Ruim</option>
+                        <option>Muito ruim</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <p>Como você avalia a limpeza dos ambientes?</p>
+                    <select class="campo" name="limpeza" required>
+                        <option value="">Selecione</option>
+                        <option>Muito boa</option>
+                        <option>Boa</option>
+                        <option>Regular</option>
+                        <option>Ruim</option>
+                        <option>Muito ruim</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <p>Como você avalia a iluminação e ventilação?</p>
+                    <select class="campo" name="iluminacao" required>
+                        <option value="">Selecione</option>
+                        <option>Muito boa</option>
+                        <option>Boa</option>
+                        <option>Regular</option>
+                        <option>Ruim</option>
+                        <option>Muito ruim</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="diagnostico-card">
+                <h3>2. Condições de utilização</h3>
+
+                <div class="pergunta">
+                    <p>Os espaços atendem às necessidades dos estudantes?</p>
+                    <select class="campo" name="necessidades" required>
+                        <option value="">Selecione</option>
+                        <option>Atendem totalmente</option>
+                        <option>Atendem parcialmente</option>
+                        <option>Atendem pouco</option>
+                        <option>Não atendem</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <p>Como você avalia as condições dos móveis e equipamentos?</p>
+                    <select class="campo" name="equipamentos" required>
+                        <option value="">Selecione</option>
+                        <option>Muito boa</option>
+                        <option>Boa</option>
+                        <option>Regular</option>
+                        <option>Ruim</option>
+                        <option>Muito ruim</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <p>Você considera os espaços escolares acessíveis?</p>
+                    <select class="campo" name="acessibilidade" required>
+                        <option value="">Selecione</option>
+                        <option>Sim, totalmente</option>
+                        <option>Parcialmente</option>
+                        <option>Não</option>
+                        <option>Não sei avaliar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="diagnostico-card">
+                <h3>3. Sua percepção geral</h3>
+
+                <div class="pergunta">
+                    <p>De modo geral, como você avalia a infraestrutura da escola?</p>
+                    <select class="campo" name="avaliacaoGeral" required>
+                        <option value="">Selecione</option>
+                        <option>Muito boa</option>
+                        <option>Boa</option>
+                        <option>Regular</option>
+                        <option>Ruim</option>
+                        <option>Muito ruim</option>
+                    </select>
+                </div>
+
+                <div class="pergunta">
+                    <p>Qual aspecto da infraestrutura precisa de mais atenção?</p>
+                    <select class="campo" name="prioridade" required>
